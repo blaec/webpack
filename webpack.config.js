@@ -33,9 +33,9 @@ module.exports = {
                         }
                     },
                     {
-                        loader: "postcss-loader",
+                        loader: 'postcss-loader',
                         options: {
-                            indent: 'postcss',
+                            ident: 'postcss',
                             plugins: () => [autoprefixer()]
                         }
                     }
@@ -50,7 +50,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: __dirname + '/src/index.html',
-            filename: "index.html",
+            filename: 'index.html',
             inject: 'body'
         })
     ]
